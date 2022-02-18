@@ -57,23 +57,23 @@ public class EasyGoatApi {
         sb.append(category.getDesc());
         sb.append("<br>");
         sb.append("<br>");
-        for (CaseInfo goatCaseInfo : caseInfos) {
-            curlList.add(goatCaseInfo.getcURL().replace("curl ", ""));
-            sb.append("<b>")
-                    .append(goatCaseInfo.getTitle())
-                    .append("</b>")
-                    .append("<br>")
-                    .append("<a target='_blank' href=")
-                    .append(curlList.size() - 1)
-                    .append(">执行</a>")
-                    .append("<br><pre><xmp>")
-                    .append(goatCaseInfo.getcURL())
-                    .append("</xmp></pre><br>")
-                    .append("预期结果：")
-                    .append(goatCaseInfo.getExpect().replace("\n", "<br>"))
-                    .append("<br>")
-                    .append("<br>");
-        }
+//        for (CaseInfo goatCaseInfo : caseInfos) {
+//            curlList.add(goatCaseInfo.getcURL().replace("curl ", ""));
+//            sb.append("<b>")
+//                    .append(goatCaseInfo.getTitle())
+//                    .append("</b>")
+//                    .append("<br>")
+//                    .append("<a target='_blank' href=")
+//                    .append(curlList.size() - 1)
+//                    .append(">执行</a>")
+//                    .append("<br><pre><xmp>")
+//                    .append(goatCaseInfo.getcURL())
+//                    .append("</xmp></pre><br>")
+//                    .append("预期结果：")
+//                    .append(goatCaseInfo.getExpect().replace("\n", "<br>"))
+//                    .append("<br>")
+//                    .append("<br>");
+//        }
         sb.append("<br>");
         sb.append("<br>");
         sb.append("=====================================================");
